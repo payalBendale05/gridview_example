@@ -3,6 +3,7 @@ package com.example.gridviewapp;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.GridView;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +11,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        GridView gridView = (GridView) findViewById(R.id.GridView);
+        gridView.setAdapter(new ImageAdaptor(MainActivity.this));
     }
 
 

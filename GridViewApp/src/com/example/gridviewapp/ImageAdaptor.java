@@ -1,10 +1,23 @@
 package com.example.gridviewapp;
 
+import javax.security.auth.PrivateCredentialPermission;
+
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 public class ImageAdaptor extends BaseAdapter {
+	public ImageAdaptor() {
+	
+		private Context mContext;
+		
+		public ImageAdaptor(Context context){
+			mContext = context;
+			}
+	
+
+	
 
 	@Override
 	public int getCount() {
@@ -39,5 +52,5 @@ public class ImageAdaptor extends BaseAdapter {
 	R.drawable.sample_2,R.drawable.sample_1,
 	R.drawable.sample_4,R.drawable.sample_6,
 	R.drawable.sample_7,R.drawable.sample_0,
-}
+};
 }
